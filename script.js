@@ -13,7 +13,7 @@ if (savedUser && savedPass) {
 }
 
 let submitbtn= document.getElementById("submit");
-submitbtn.addEventListener('submit' (e)=>{
+submitbtn.addEventListener('click' (e)=>{
 	e.preventDefault();
 
 	let username = usernameInput.value;
@@ -39,7 +39,7 @@ submitbtn.addEventListener('submit' (e)=>{
 });
 
 
-existingBtn.addListener('submit' ,()=>{
+existingBtn.addListener('click' ,() => {
 	let username = localStorage.getItem("username");
 	alert(`Logged in as saved ${username}`)
 })
